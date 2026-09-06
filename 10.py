@@ -1,7 +1,7 @@
-"""Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit."""
-#entrada de dados
-celsius=float(input("Digite a temperatura em celsius"))
-#processamento de dados
-farenheit = (celsius * 1.8) + 32
-#saída de dados
-print("a temperatura em farenheit é: ",farenheit)
+def converter_celsius_para_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+temperature_celsius = float(input("Digite a temperatura em Celsius: "))
+
+print(f"A temperatura em Fahrenheit é: {converter_celsius_para_fahrenheit(temperature_celsius)}")
